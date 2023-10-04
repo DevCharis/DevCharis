@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,800);
 
-html, body { margin: 0; }
+
 
 :focus { outline: none; }
 ::-webkit-input-placeholder { color: #DEDFDF; }
@@ -8,12 +8,15 @@ html, body { margin: 0; }
 :-moz-placeholder { color: #DEDFDF; }
 ::-ms-input-placeholder { color: #DEDFDF; }
 
-body {
-  background: #6ED0F6;
+
+/*body {
+  display:f;
+  justify-content: center;
+  background: #7d6b03;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
-}
+}*/
 
 #wrapper, label, #arrow, button span { transition: all .5s cubic-bezier(.6,0,.4,1); }
 
@@ -31,14 +34,14 @@ body {
 #reset:checked ~ #wrapper #arrow { left: 404px; }
 #reset:checked ~ button span { transform: translate3d(0,0,0); }
 
-form {
+/*form {
   width: 450px;
   height: 370px;
   margin: -185px -225px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
+  position:relative;
+  left: 100%;
+  top: 100%;
+}*/
 
 input[type=radio] { display: none; }
 
@@ -46,10 +49,11 @@ label {
   cursor: pointer;
   display: inline-block;
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 1000;
   opacity: .5;
   margin-bottom: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 label:hover {
   transition: all .3s cubic-bezier(.6,0,.4,1);
@@ -58,6 +62,7 @@ label:hover {
 label[for="signin"] { margin-right: 20px; }
 label[for="reset"] { float: right; }
 input[type=radio]:checked + label { opacity: 1; }
+
 
 input[type=text],
 input[type=password] {
@@ -74,28 +79,29 @@ input[type=password] {
   transition: all .2s ease-in-out;
 }
 button {
-  background: #079BCF;
+  background: #0f1000;
+  display: flex;
   border: none;
-  border-radius: 8px;
+  border-radius: 3px;
   color: #fff;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
-  font-size: 27px;
-  height: 72px;
-  width: 100%;
-  margin-bottom: 10px;
+  font-size: 2px;
+  height: 40px;
+  width: 70%;
+  margin-bottom: 1px;
   overflow: hidden;
   transition: all .3s cubic-bezier(.6,0,.4,1);
 }
 button span {
-  display: block;
-  line-height: 72px;
+  display: block ;
+  line-height: 10px;
   position: relative;
-  top: -2px;
-  transform: translate3d(0,0,0);
+  top: 5px;
+  transform: translated(0,0,0);
 }
 button:hover {
-  background: #007BA5;
+  background: #42442e;
 }
 
 #arrow {

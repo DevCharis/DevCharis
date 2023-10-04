@@ -1,55 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../formstyle.css" />
 
-</head>
-<body class="body">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+  </head>
+  <body class="body">
     <header class="header">
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
     </header>
-    
+
     <nav class="sidebar">
-        <ul>
-            <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-            <a href="../about/index.html">About <i class="fa fa-pencil" aria-hidden="true"></i></a>
-        
-            <li><a href="../services/index.html"><i class="fa fa-cart-plus" aria-hidden="true"></i> Services</a> 
-            <a href="./index.html">Contact <i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
-        </ul>
+      <ul>
+        <a href="../index.html"
+          ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+        >
+        <a href="../about/index.html"
+          ><i class="fa fa-pencil" aria-hidden="true"></i> About</a
+        >
+        <a href="../services/index.html"
+          ><i class="fa fa-cart-plus" aria-hidden="true"></i>Services</a
+        >
+        <a href="./index.html"
+          ><i class="fa fa-user-circle-o" aria-hidden="true"></i> Contact</a
+        >
+      </ul>
     </nav>
+    <a href="#Contactinfo">Contact Information</a>
 
-    <div class="container">
-        <h2>Contact Information</h2>
-        <p>If you have any questions or need assistance, please feel free to contact us using the information below:</p>
-        
-        <ul>
-            <li><strong>Email:</strong> joshuabamidele9@gmail.com</li>
-            <li><strong>Phone:</strong> +234 810 106 2422</li>
-            <li><strong>Address:</strong> 123 Charis Street, CharisVille, New Charis</li>
-        </ul>
-
-        <h2>Contact Form</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
+    <div class="container2">
+      <div>
+        <form>
+          <input
+            id="signin"
+            type="radio"
+            name="action"
+            value="signin"
+            checked="checked"
+          />
+          <label for="signin">Sign in</label>
+          <input id="signup" type="radio" name="action" value="signup" />
+          <label for="signup">Sign up</label>
+          <input id="reset" type="radio" name="action" value="reset" />
+          <label for="reset">Reset</label>
         </form>
+      </div>
+      <div id="wrapper">
+        <div id="arrow"></div>
+        <input id="email" placeholder="Email" type="text" />
+        <div id="arrow"></div>
+        <input id="pass" placeholder="Password" type="password" />
+        <div id="arrow"></div>
+        <input id="repass" placeholder="Repeat password" type="password" />
+        <div id="button2">
+          <button class="button2" type="submit">Sign In</button>
+          <button class="button2" type="submit">Sign Up</button>
+          <button type="submit"><span>Reset password</span><br /></button>
+        </div>
+      </div>
+
+      <div id="hint"></div>
     </div>
 
-    <footer class="footer">
-        &copy; 2023 DevCharis
-    </footer>
-</body>
+    <div class="container" id="Contactinfo">
+      <h2>Contact Information</h2>
+      <p>
+        If you have any questions or need assistance, please feel free to
+        contact us using the information below:
+      </p>
+
+      <ul>
+        <li><strong>Email:</strong> joshuabamidele9@gmail.com</li>
+        <li><strong>Phone:</strong> +234 810 106 2422</li>
+        <li>
+          <strong>Address:</strong> 123 Charis Street, CharisVille, New Charis
+        </li>
+      </ul>
+
+      <h2>Contact Form</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer class="footer">&copy; 2023 DevCharis</footer>
+  </body>
 </html>

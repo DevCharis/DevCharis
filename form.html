@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In to DevCharis</title>
+    <link rel="stylesheet" type="text/css" href="./formstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+  </head>
+
+  <body class="body">
+    <container id="container">
+      <nav>
+        <ul>
+          <a href="#"><i class="fa fa-home" aria-hidden="true"> Home </i></a>
+          <a href="./about/index.html"
+            >About <i class="fa fa-pencil" aria-hidden="true"></i
+          ></a>
+          <a href="./services/index.html">
+            <i class="fa fa-cart-plus" aria-hidden="true"> Services</i></a
+          >
+          <a href="./contact/index.html"
+            >Contact <i class="fa fa-user-circle-o" aria-hidden="true"></i
+          ></a>
+          <a href="./form.html"
+            >Sign In <i class="fa fa-user-circle-o" aria-hidden="true"></i
+          ></a>
+        </ul>
+      </nav>
+
+      <header class="header">
+        <h1>Sign In</h1>
+        <h2>Development at its best!!</h2>
+        <h3>Click on the tabs</h3>
+      </header>
+    </container>
+    <div>
+      <div>
+        <form>
+          <input
+            id="signin"
+            type="radio"
+            name="action"
+            value="signin"
+            checked="checked"
+          />
+          <label for="signin">Sign in</label>
+          <input id="signup" type="radio" name="action" value="signup" />
+          <label for="signup">Sign up</label>
+          <input id="reset" type="radio" name="action" value="reset" />
+          <label for="reset">Reset</label>
+        </form>
+      </div>
+      <div id="wrapper">
+        <div id="arrow"></div>
+        <input id="email" placeholder="Email" type="text" />
+        <div id="arrow"></div>
+        <input id="pass" placeholder="Password" type="password" />
+        <div id="arrow"></div>
+        <input id="repass" placeholder="Repeat password" type="password" />
+        <button type="submit">
+          <span>Reset password</span><br />
+          <span>Sign In</span><br />
+          <span>Sign up</span>
+        </button>
+      </div>
+
+      <div id="hint">
+        <footer>&copy DevCharis</footer>
+      </div>
+    </div>
+  </body>
+</html>
